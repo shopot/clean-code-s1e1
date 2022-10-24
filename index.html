@@ -7,23 +7,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container right">
+<div class="container">
   <img src="./eisenhower-matrix.jpg">
-  <a class="more_inf"
+  <a class="block-header__link"
      href="https://goal-life.com/page/method/matrix-eisenhower">Want
     more details?</a>
 </div>
 <div class="container">
   <h3 class="title">Add Item</h3>
   <div class="todo-form">
-    <input id="new-task" class="control-input task" type="text">
-    <button>Add</button>
+    <input id="new-task"
+           class="todo-form__input control-input task"
+           type="text">
+    <button class="todo-form__btn-add btn">Add</button>
   </div>
   <h3 class="title">Todo</h3>
   <ul id="tasks-incomplete" class="todo-list todo-list_incomplete">
     <li class="todo-list__item">
       <input type="checkbox">
-      <label class="todo-list__item-label task">Pay Bills</label>
+      <label class="todo-list__item-content task">Pay Bills</label>
       <input type="text" class="todo-list__item-input control-input task">
       <button class="todo-list__item-btn-edit btn btn-edit">Edit</button>
       <button class="todo-list__item-btn-delete btn btn-delete">
@@ -32,7 +34,7 @@
     </li>
     <li class="todo-list__item todo-list__item_edit mode-edit">
       <input type="checkbox">
-      <label class="todo-list__item-label task">Go Shopping</label>
+      <label class="todo-list__item-content task">Go Shopping</label>
       <input type="text"
              value="Go Shopping"
              class="todo-list__item-input control-input task">
@@ -46,7 +48,7 @@
   <ul id="tasks-completed" class="todo-list todo-list_completed">
     <li class="todo-list__item">
       <input type="checkbox" checked>
-      <label class="todo-list__item-label task">See the Doctor</label>
+      <label class="todo-list__item-content task">See the Doctor</label>
       <input type="text" class="todo-list__item-input control-input task">
       <button class="todo-list__item-btn-edit btn btn-edit">Edit</button>
       <button class="todo-list__item-btn-delete btn btn-delete">
