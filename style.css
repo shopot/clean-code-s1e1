@@ -15,10 +15,6 @@ body {
   width: 100%;
 }
 
-.block-header__link {
-  font-family: fantasy, cursive;
-}
-
 @media (max-width: 768px) {
   .container {
     text-align: center;
@@ -102,6 +98,30 @@ input[type="text"] {
 
 input[type="text"]:focus {
   color: #333333;
+}
+
+/* Bllcok header */
+.block-header {
+  padding-bottom: 14px;
+}
+
+.block-header__link {
+  font-family: fantasy, cursive;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* from */
+.todo-form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-input {
+  width: 100%;
 }
 
 /* New Task */
