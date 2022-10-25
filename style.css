@@ -22,6 +22,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .block-header__link {
     text-align: center;
   }
