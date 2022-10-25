@@ -176,7 +176,7 @@ li > input[type="text"] {
 
 /* Completed */
 ul#tasks-completed label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888888;
 }
 
