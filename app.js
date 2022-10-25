@@ -10,8 +10,8 @@
 
 var taskInput = document.querySelector('.todo-form__input');//Add a new task.
 var addButton = document.querySelector(".todo-form__btn-add");//first button
-var incompleteTaskHolder = document.getElementById("tasks-incomplete");//ul of #tasks-incomplete
-var completedTasksHolder = document.getElementById("tasks-completed");//tasks-completed
+var incompleteTaskHolder = document.querySelector(".todos_incomplete");//ul of #tasks-incomplete
+var completedTasksHolder = document.querySelector(".todos_completed");//tasks-completed
 
 
 //New task list item
@@ -22,6 +22,7 @@ var createNewTaskElement = function (taskString) {
 
     //input (checkbox)
     var checkBox = document.createElement("input");//checkbx
+    checkBox.className = "todos__item-checkbox";
     //label
     var label = document.createElement("label");//label
     //input (text)
